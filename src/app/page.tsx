@@ -1,5 +1,10 @@
-import styles from './page.module.css';
+import { Room } from './Room';
+import { CollaborativeApp } from './CollaborativeApp';
 
 export default function Home() {
-  return <main className={styles.main}></main>;
+  return (
+    <Room>
+      <CollaborativeApp />
+    </Room>
+  );
 }
